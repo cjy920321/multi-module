@@ -1,0 +1,8 @@
+rootProject.name = 'multi-module'
+
+include(':common',
+        ':auth',
+        ':task',
+        ':feign',
+        ':file',
+        ':base')
