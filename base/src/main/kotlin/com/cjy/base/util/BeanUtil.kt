@@ -17,6 +17,7 @@ class BeanUtil : ApplicationContextAware {
     companion object {
         private var context: ApplicationContext by Delegates.notNull()
 
+        @JvmStatic
         fun <T : Any>getBean(beanClass: Class<T>): T {
             return context.getBean(beanClass)
         }

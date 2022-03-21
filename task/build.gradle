@@ -1,5 +1,7 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
 plugins {
-    id 'org.springframework.boot'
+    id 'org.springframework.boot' apply false
 }
 
 group = 'com.cjy'
@@ -8,5 +10,11 @@ sourceCompatibility = '1.8'
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation project(':base')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom SpringBootPlugin.BOM_COORDINATES
+    }
 }
