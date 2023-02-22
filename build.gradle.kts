@@ -5,6 +5,7 @@ buildscript {
     val kotlinVersion: String by project
 
     repositories {
+        mavenLocal()
         maven (
             url = "https://maven.aliyun.com/repository/central"
         )
@@ -23,6 +24,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         maven (
             url = "https://maven.aliyun.com/repository/central"
         )

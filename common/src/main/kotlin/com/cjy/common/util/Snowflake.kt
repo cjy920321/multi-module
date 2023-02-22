@@ -1,4 +1,4 @@
-package com.cjy.base.util
+package com.cjy.common.util
 
 import org.slf4j.LoggerFactory
 

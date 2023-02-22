@@ -1,5 +1,6 @@
 package com.cjy.base.util
 
+import com.cjy.common.util.Snowflake
 import java.util.Properties
 import org.hibernate.HibernateException
 import org.hibernate.engine.spi.SharedSessionContractImplementor

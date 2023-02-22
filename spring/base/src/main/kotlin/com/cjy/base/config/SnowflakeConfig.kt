@@ -1,7 +1,7 @@
 package com.cjy.base.config
 
 import com.cjy.base.properties.SnowflakeProperties
-import com.cjy.base.util.Snowflake
+import com.cjy.common.util.Snowflake
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
