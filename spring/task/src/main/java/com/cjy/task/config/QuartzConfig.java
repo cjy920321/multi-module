@@ -1,6 +1,6 @@
 package com.cjy.task.config;
 
-import com.cjy.base.util.BeanUtil;
+import com.cjy.common.util.BeanUtil;
 import com.cjy.task.config.properties.QuartzTaskProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;

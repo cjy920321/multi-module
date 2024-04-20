@@ -14,14 +14,14 @@ import java.io.IOException;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("fiNews")
+@RequestMapping("networkFile")
 public class FeignController {
 
-    private final FileService fiNewsService;
+    private final FileService fileService;
 
     @GetMapping("/{fileId}")
     public Response<Float> getFile(@PathVariable String fileId) throws IOException {
-        NetworkFileResult result = fiNewsService.getFile(fileId);
+        NetworkFileResult result = fileService.getFile(fileId);
         return Response.success(FileUtil.getAudioDuration(result.getInput(), result.getLength()));
     }
 }

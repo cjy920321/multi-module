@@ -1,4 +1,4 @@
-package com.cjy.common.enum
+package com.cjy.common.enums
 
 interface IEnum<T> {
     fun getValue(): T

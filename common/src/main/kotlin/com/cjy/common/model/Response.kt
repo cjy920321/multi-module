@@ -1,7 +1,7 @@
 package com.cjy.common.model
 
-import com.cjy.common.enum.IResponseCode
-import com.cjy.common.enum.ResponseCode
+import com.cjy.common.enums.IResponseCode
+import com.cjy.common.enums.ResponseCode
 
 class Response<T> private constructor(
     private val code: String,

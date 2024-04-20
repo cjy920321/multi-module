@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value = "fiNewsFile", url = "${app.file.url}")
+@FeignClient(value = "networkFile", url = "${app.file.url}")
 @Service
 public interface NetworkFileService {
 
     @GetMapping("/{fileId}")
-    Response getFile(@PathVariable String fileId);
+    Response getFile(@PathVariable("fileId") String fileId);
 }

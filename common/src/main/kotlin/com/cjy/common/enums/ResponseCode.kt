@@ -1,4 +1,4 @@
-package com.cjy.common.enum
+package com.cjy.common.enums
 
 enum class ResponseCode(private val code: String, private val msg: String): IResponseCode {
 

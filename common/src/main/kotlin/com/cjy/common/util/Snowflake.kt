@@ -2,7 +2,7 @@ package com.cjy.common.util
 
 import org.slf4j.LoggerFactory
 
-class Snowflake(private var workerId: Long, private val dataCenterId: Long) {
+class Snowflake(private var workerId: Long = 0, private val dataCenterId: Long = 0) {
     private val logger = LoggerFactory.getLogger(Snowflake::class.java)
 
     private val twepoch: Long = 1647667000000L // 起始时间
