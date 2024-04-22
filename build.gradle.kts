@@ -41,5 +41,7 @@ allprojects {
 }
 
 subprojects {
-    apply(plugin  = "java-library")
+    if (project.childProjects.isEmpty()) {
+        apply(plugin = "java-library")
+    }
 }
