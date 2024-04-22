@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.utils.`is`
+
 buildscript {
 
     val springBootVersion: String by project
@@ -37,5 +39,7 @@ allprojects {
 
 
 subprojects {
-    apply(plugin  = "java-library")
+    if (project.childProjects.isEmpty()) {
+        apply(plugin = "java-library")
+    }
 }
